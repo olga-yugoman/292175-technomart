@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header class="main-header">
+    <header class="top-header">
       <div class="container">
         <div class="index-logo">
           <img src="http://placehold.it/220x40" width="220" height="40" alt="Техномарт">
@@ -23,8 +23,8 @@
         </div>
       </div>
     </header>
-    <main class="container">
-      <div class="header-middle">
+    <header class="bottom-header">
+      <div class="container">
         <p class="header-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <section class="header-contacts">
           <p class="header-phone">+7(812)555-05-55</p>
@@ -34,7 +34,6 @@
           <a class="login" href="#">Войти</a>
           <a class="register" href="#">Регистрация</a>
         </div>
-      </div>
         <nav class="main-navigation">
            <ul>
             <li>
@@ -60,28 +59,32 @@
             </li>
           </ul>
         </nav>
+      </div>
+    </header>
+    <main class="container">
+      
         <div class="promo">
-          <div class="promo-materials">
+          <div class="promo-block materials">
             <p>Материалы</p>
             <a class="promo-btn" href="#">На любой вкус</a>
           </div>
 
-          <div class="promo-tools">
+          <div class="promo-block tools">
             <p>Инструмент</p>
             <a class="promo-btn" href="#">На все случаи</a>
           </div>
 
-          <div class="promo-tech">
+          <div class="promo-block tech">
             <p>Техника</p>
             <a class="promo-btn" href="#">Для стройки</a>
           </div>
 
-          <div class="promo-discount">
+          <div class="promo-block discount">
             <p>Скидки 50%</p>
             <a class="promo-btn" href="#">На 350 товаров</a>
           </div>
 
-          <div class="promo-delivery">
+          <div class="promo-block delivery">
             <p>Доставка</p>
             <a class="promo-btn" href="#">Бесплатно</a>
           </div>
@@ -90,23 +93,22 @@
             <div class="promo-slider-1">
               <p class="slider-title">Перфораторы</p>
               <p>Настоящие мужские игрушки</p>
-              <button class="slider-prev" type="button"></button>
-              <button class="slider-next" type="button"></button>
-              <a class="btn" href="#">Открыть каталог</a>
             </div>
 
             <div class="promo-slider-2">
               <p class="slider-title">Дрели</p>
               <p>Соседям на радость!</p>
+            </div>
               <button class="slider-prev" type="button"></button>
               <button class="slider-next" type="button"></button>
               <a class="btn" href="#">Открыть каталог</a>
-            </div>
           </div>
         </div>
         <div class="items">
-          <h2>Популярные товары</h2>
-          <a class="btn" href="#">Все популярные товары</a>
+          <div class="items-header">
+            <h2>Популярные товары</h2>
+            <a class="btn" href="#">Все популярные товары</a>
+          </div>
 
           <article class="item-card">
             <img src="http://placehold.it/200x130" width="200" height="130" alt="Перфоратор BOSCH BFG 9000">
@@ -140,13 +142,15 @@
             <a class="to-basket" href="#">Купить</a>
             <a class="to-bookmarks" href="#">В закладки</a>
             <p>Перфоратор BOSCH <span class="item-mark">BFG 2000</span></p>
-            <span class="old-price"></span>
             <span class="new-price">12500 p.</span>
           </article>
         </div>
         <div class="producers">
-          <h2>Популярные производители</h2>
-          <a class="btn" href="#">Все производители</a>
+          <div class="producers-header">
+            <h2>Популярные производители</h2>
+            <a class="btn" href="#">Все производители</a>
+          </div>
+
           <ul class="producers-list">
             <li>
               <a href="#"><img src="http://placehold.it/225x145" width="225" height="145" alt="Bosch"></a>
@@ -229,15 +233,15 @@
           </div>
         </div>
 <!-- попап write us -->
-        <div class="write-us">
+        <div class="popup write-us">
           <form action="#" method="post">
-              <a class="close-btn" href="#">Закрыть</a>
+              <button class="close-popup">Закрыть</button>
 
               <label for="name-field">Ваше имя:</label>
-              <input type="text" name="name" id="name-field" value="Представьтесь, пожалуйста">
+              <input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
             
               <label for="mail-field">Ваш e-mail:</label>
-              <input type="text" name="mail" id="mail-field" value="Для отправки ответа">
+              <input type="text" name="mail" id="mail-field" placeholder="Для отправки ответа">
             
               <label for="comment-field">Текст письма:</label>
               <textarea name="comment" id="comment-field">В свободной форме</textarea>
@@ -247,7 +251,7 @@
         </div>
 <!-- карта -->
         <div class="map-on-click">
-          <a class="close-btn" href="#">Закрыть</a>
+          <button class="close-popup">Закрыть</button>
           <img src="http://placehold.it/940x445" width="940" height="445" alt="Big map">
         </div>
     </main>
@@ -279,7 +283,7 @@
       </footer>
       <footer class="bottom-footer">
         <section class="footer-copyright-technomart">
-          &copy;© 2010–2017 Компания «Техномарт»<br>
+          &copy; 2010–2017 Компания «Техномарт»<br>
           Все права защищены
         </section>
         <section class="footer-social">
