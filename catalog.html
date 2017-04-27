@@ -5,15 +5,15 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header class="top-header">
+    <header>
+    <div class="top-background">
       <div class="container">
         <div class="index-logo">
           <a href="index.html"><img src="http://placehold.it/220x40" width="220" height="40" alt="Техномарт"></a>
         </div>
         <div class="header-search">
           <form action="#" method="get">
-            <label for="search-field">Поиск:</label>
-            <input type="text" name="search" id="search-field">
+            <input type="text" name="search" id="search-field" placeholder="Поиск:">
           </form>
         </div>
         <div class="cart-block">
@@ -22,8 +22,8 @@
           <a class="cart-order" href="#">Оформить заказ</a>
         </div>
       </div>
-    </header>
-    <header class="bottom-header">
+    </div>
+    <div class="middle-background">
       <div class="container">
         <p class="header-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <section class="header-contacts">
@@ -41,13 +41,13 @@
         <nav class="main-navigation">
            <ul>
             <li>
-              <a href="#">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li>
               <a href="#">Компания</a>
             </li>
             <li>
-              <a href="catalog.html">Каталог</a>
+              <a href="#">Каталог</a>
             </li>
             <li>
               <a href="#">Новости</a>
@@ -64,6 +64,7 @@
           </ul>
         </nav>
       </div>
+    </div>
     </header>
     <main class="container">
       <ul class="breadcrumbs">
@@ -82,13 +83,13 @@
           <h2>Фильтр:</h2>
         
           <form action="#" method="get">
-            <fieldset class="filter-price">
+            <fieldset class="filter-group">
               <legend class="filter-title">Цена:</legend>
                 <input type="text" name="low-price" placeholder="0" disabled>
                 <span>&mdash;</span>            
                 <input type="text" name="high-price" placeholder="30000" disabled>
             </fieldset>
-            <fieldset class="filter-producers">
+            <fieldset class="filter-group">
               <legend class="filter-title">Производители:</legend>
                 <input type="checkbox" name="bosch" id="bosch-box" checked>
                 <label for="bosch-box">Bosch</label>
@@ -233,7 +234,8 @@
           в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </div>
     </main>
-    <footer class="top-footer">
+    <footer>
+    <div class="footer-background-top">
       <div class="container">
         <section class="footer-contacts">
           <div class="index-logo">
@@ -258,9 +260,10 @@
           </ul>
         </div>
       </div>
-      </footer>
-      <footer class="bottom-footer">
-        <section class="footer-copyright-technomart">
+      </div>
+      <div class="footer-background-bottom">
+        <div class="container">
+          <section class="footer-copyright-technomart">
           &copy; 2010–2017 Компания «Техномарт»<br>
           Все права защищены
         </section>
@@ -277,6 +280,8 @@
           <p>Разработано &ndash;</p>
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </section>
-    </footer>
+        </div>
+      </div>
+      </footer>
   </body>
 </html>
