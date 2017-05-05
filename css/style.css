@@ -1,0 +1,305 @@
+body {
+	font-size: 13px;
+	line-height: 24px;
+	color: black;
+	font-weight: normal;
+	font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.block-title {
+	font-size: 30px;
+	line-height: 30px;
+	color: #3d546e;
+	font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.content-title {
+	font-size: 30px;
+	line-height: 24px;
+	font-family: "Cuprum", "Arial", sans-serif;
+}
+
+/*подсветка для сетки*/
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  margin-bottom: 60px;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+	background: rgba(255, 45, 82, 0.2); /*подсветка для сетки*/
+}
+
+.top-background {
+	margin-bottom: 50px;
+}
+
+.index-logo {
+	float: left;
+	width: 220px;
+	min-height: 47px;
+}
+
+.header-search {
+	float: left;
+	width: 250px;
+	min-height: 40px;
+	padding: 0 10px;
+	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.cart-block {
+	float: right;
+	width: 450px;
+	min-height: 40px;
+	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.cart-bookmarks {
+	float: left;
+	width: 140px;
+	padding-right: 10px;
+	margin: 0;
+	background: rgba(288, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.cart-basket{
+	float: left;
+	width: 140px;
+	padding-right: 10px;
+	margin: 0;
+	background: rgba(288, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.cart-order {
+	float: right;
+	width: 150px;
+	background: rgba(288, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.header-description {
+	float: left;
+	width: 300px;
+	min-height: 150px;
+	margin: 0;
+	margin-right: 20px;
+	margin-bottom: 45px;
+	background: rgba(288, 255, 45, 0.2); /*для подсветки сетки*/	
+}
+
+.header-contacts {
+	float: left;
+	width: 300px;
+	min-height: 150px;
+	margin-right: 20px;
+	margin-bottom: 45px;
+	background: rgba(288, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.user-block {
+	float: right;
+	width: 300px;
+	min-height: 150px;
+	margin-bottom: 45px;
+	background: rgba(288, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+li {
+	list-style-type: none;
+	position: relative;
+  	display: inline-block;
+}
+
+ul {
+	padding-left: 0;
+}
+
+.main-navigation {
+	float: left;
+	width: 940px;
+	min-height: 60px;
+	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.promo {
+	margin-bottom: 50px;
+	background: rgba(65, 240, 240, 0.2); /*для подсветки сетки*/
+}
+
+.promo-block {
+	float: left;
+  	width: 300px;
+  	margin-right: 20px;
+  	margin-bottom: 20px;
+   	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.promo-block:nth-child(3n),
+.promo-block:nth-child(5) {
+	float: right;
+  	margin-right: 0px;
+}
+
+.promo-slider {
+	width: 620px;
+}
+
+.items-header,
+.producers-header {
+	margin-bottom: 20px;
+	background: rgba(65, 240, 240, 0.2); /*для подсветки сетки*/
+}
+
+.block-title {
+	float: left;
+	width: 620px;
+	margin: 0;
+	margin-right: 20px;
+}
+
+.block-title + a {
+	float: right;
+	width: 300px;
+}
+
+.items {
+	font-size: 0px;
+	margin-bottom: 20px;
+	background: rgba(65, 240, 240, 0.2); /*для подсветки сетки*/
+}
+
+.index-item-card {
+	position: relative;
+  	display: inline-block;
+  	vertical-align: top;
+  	width: 218px;
+  	font-size: 14px;
+  	margin-right: 20px;
+   	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.index-item-card:last-child {
+  	margin-right: 0;
+}
+
+.producers {
+	font-size: 0px;
+	margin-bottom: 85px;
+	background: rgba(65, 240, 240, 0.2); /*для подсветки сетки*/
+}
+
+.producers-list li {
+	position: relative;
+  	display: inline-block;
+  	vertical-align: top;
+  	width: 220px;
+  	margin-right: 20px;
+  	margin-bottom: 20px;
+   	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.producers-list li:nth-child(4n) {
+	margin-right: 0;
+}
+
+.services {
+	padding-top: 70px;
+	margin-bottom: 80px;
+	background: rgba(65, 240, 240, 0.2); /*для подсветки сетки*/
+
+}
+
+.servises-menu {
+	float: left;
+	width: 300px;
+	margin-right: 20px;
+	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.services-slider-content {
+	float: right;
+	width: 620px;
+	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.content-left {
+	float: left;
+	width: 620px;
+	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.about {
+	margin-bottom: 80px;
+}
+
+.content-right {
+	float: right;
+	width: 300px;
+	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.popup {
+	display: none;
+}
+
+.footer-contacts {
+	float: left;
+	width: 380px;
+	margin-right: 10px;
+	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.footer-menu {
+	float: right;
+	width: 550px;
+	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.bottom-footer {
+	margin-top: 55px;
+	padding-top: 40px;
+  	padding-bottom: 40px;
+}
+
+.footer-copyright-technomart {
+  	float: left;
+  	width: 320px;
+  	margin-right: 60px;
+  	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+ .footer-social {
+ 	float: left;
+ 	width: 180px;
+ 	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+ .footer-connect {
+ 	float: right;
+ 	width: 140px;
+ 	margin-right: 20px;
+ 	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.footer-copyright {
+ 	float: right;
+ 	width: 140px;
+ 	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
