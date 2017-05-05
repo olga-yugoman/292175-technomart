@@ -6,9 +6,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="inner-header">
     <div class="top-background">
-      <div class="container">
+      <div class="container clearfix">
         <div class="index-logo">
           <a href="index.html"><img src="img\header-logo.jpg" width="220" height="47" alt="Техномарт"></a>
         </div>
@@ -19,13 +19,13 @@
         </div>
         <div class="cart-block">
           <p class="cart-bookmarks">Закладки:<span class="counter">0</span></p>
-          <p class="cart-basket-full">Корзина:<span class="counter">10</span></p>
+          <p class="cart-basket basket-full">Корзина:<span class="counter">10</span></p>
           <a class="cart-order" href="#">Оформить заказ</a>
         </div>
       </div>
     </div>
     <div class="middle-background">
-      <div class="container">
+      <div class="container clearfix">
         <p class="header-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <section class="header-contacts">
           <p class="header-phone">+7(812)555-05-55</p>
@@ -79,9 +79,9 @@
           <a>Перфораторы</a>
         </li>            
       </ul>
-      <h1>Перфораторы</h1>
+      <h1 class="catalog-main-title">Перфораторы</h1>
         <div class="filter">
-          <h2>Фильтр:</h2>
+          <h2 class="inner-block-title">Фильтр:</h2>
         
           <form action="#" method="get">
             <fieldset class="filter-group">
@@ -122,16 +122,16 @@
             <input class="btn" type="submit" value="Показать">
           </form>
         </div>
-        <div class="items">
+        <div class="catalog">
           <div class="items-sort">
-            <h2>Сортировка:</h2>
+            <h2 class="inner-block-title">Сортировка:</h2>
             <a class="sort-btn sort-active" href="#">По цене</a>
             <a class="sort-btn" href="#">По типу</a>
             <a class="sort-btn" href="#">По функционалу</a>
             <a class="sort-arrow arrow-active" href="#">По возрастанию</a>
             <a class="sort-arrow" href="#">По убыванию</a>
           </div>
-
+          <div class="items">
           <article class="item-card">
             <img src="img\bfg-3000.jpg" width="218" height="140" alt="Перфоратор BOSCH BFG 3000">
             <a class="to-basket" href="#">Купить</a>
@@ -194,7 +194,7 @@
           </article>
 
           <article class="item-card">
-            <img src="img\bfg-6000.jpg" width="200" height="130" alt="Перфоратор BOSCH BFG 6000">
+            <img src="img\bfg-6000.jpg" width="218" height="140" alt="Перфоратор BOSCH BFG 6000">
             <a class="to-basket" href="#">Купить</a>
             <a class="to-bookmarks" href="#">В закладки</a>
             <p>Перфоратор BOSCH <span class="item-mark">BFG 6000</span></p>
@@ -203,12 +203,13 @@
           </article>
 
           <article class="item-card">
-            <img src="img\bfg-2000.jpg" width="200" height="130" alt="Перфоратор BOSCH BFG 2000">
+            <img src="img\bfg-2000.jpg" width="218" height="140" alt="Перфоратор BOSCH BFG 2000">
             <a class="to-basket" href="#">Купить</a>
             <a class="to-bookmarks" href="#">В закладки</a>
             <p>Перфоратор BOSCH <span class="item-mark">BFG 2000</span></p>
             <span class="new-price">12500 p.</span>
           </article>
+          </div>
         </div>
 
 <!-- попап "товар добавлен в корзину" -->
@@ -225,7 +226,6 @@
           <li><a class="btn">3</a></li>
           <li><a class="btn">Следующая</a></li>
         </ul>
-
         <div class="about-items">
           <h3>Пара слов о перфораторах</h3>
           <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления 
@@ -236,11 +236,11 @@
         </div>
     </main>
     <footer>
-    <div class="footer-background-top">
-      <div class="container">
+    <div class="top-footer">
+      <div class="container clearfix">
         <section class="footer-contacts">
           <div class="index-logo">
-            <a href="index.html"><img src="img\footer-logo.jpg" width="220" height="68" alt="Техномарт"></a>
+            <img src="img\footer-logo.jpg" width="220" height="68" alt="Техномарт">
           </div>
           г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55
@@ -262,9 +262,9 @@
         </div>
       </div>
       </div>
-      <div class="footer-background-bottom">
-        <div class="container">
-          <section class="footer-copyright-technomart">
+      <div class="bottom-footer">
+      <div class="container clearfix">
+        <section class="footer-copyright-technomart">
           &copy; 2010–2017 Компания «Техномарт»<br>
           Все права защищены
         </section>
@@ -281,8 +281,8 @@
           <p>Разработано &ndash;</p>
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </section>
-        </div>
       </div>
-      </footer>
+    </div>
+    </footer>
   </body>
 </html>

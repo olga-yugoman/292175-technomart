@@ -6,7 +6,7 @@ body {
 	font-family: "PT Sans", "Arial", sans-serif;
 }
 
-.block-title {
+.index-block-title {
 	font-size: 30px;
 	line-height: 30px;
 	color: #3d546e;
@@ -36,8 +36,12 @@ body {
   clear: both;
 }
 
-header {
-  margin-bottom: 60px;
+.index-header {
+  	margin-bottom: 60px;
+}
+
+.inner-header {
+	margin-bottom: 40px;
 }
 
 .container {
@@ -167,19 +171,19 @@ ul {
 	background: rgba(65, 240, 240, 0.2); /*для подсветки сетки*/
 }
 
-.block-title {
+.index-block-title {
 	float: left;
 	width: 620px;
 	margin: 0;
 	margin-right: 20px;
 }
 
-.block-title + a {
+.index-block-title + a {
 	float: right;
 	width: 300px;
 }
 
-.items {
+.index-items {
 	font-size: 0px;
 	margin-bottom: 20px;
 	background: rgba(65, 240, 240, 0.2); /*для подсветки сетки*/
@@ -302,4 +306,69 @@ ul {
  	float: right;
  	width: 140px;
  	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.breadcrumbs {
+	margin-bottom: 40px;
+	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.catalog-main-title {
+	height: 90px;
+	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.inner-block-title {
+	float: left;
+	font-size: 13px;
+	line-height: 18px;
+	background: rgba(65, 240, 240, 0.2); /*для подсветки сетки*/
+
+}
+
+.filter {
+	float: left;
+	width: 220px;
+	margin-right: 20px;
+	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.items-sort {
+	float: right;
+	width: 700px;
+	margin-bottom: 20px;
+}
+
+.items {
+	float: right;
+	width: 700px;
+	font-size: 0px;
+	margin-bottom: 20px;
+	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.item-card {
+	position: relative;
+  	display: inline-block;
+  	vertical-align: top;
+  	width: 218px;
+  	font-size: 14px;
+  	margin-right: 20px;
+  	margin-bottom: 20px;
+   	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.item-card:nth-child(3n) {
+  	margin-right: 0;
+}
+
+.pagination {
+	clear: right;
+	margin-left: 240px;
+	margin-bottom: 60px;
+}
+
+.about-items {
+	margin-bottom: 75px;
+   	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
 }
