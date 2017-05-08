@@ -38,6 +38,7 @@ body {
 
 .index-header {
   	margin-bottom: 60px;
+  	background-color: #f2f6f8;
 }
 
 .inner-header {
@@ -52,7 +53,8 @@ body {
 }
 
 .top-background {
-	margin-bottom: 50px;
+	margin-bottom: 45px;
+	background-color: #293449;
 }
 
 .index-logo {
@@ -196,6 +198,7 @@ ul {
   	width: 218px;
   	font-size: 14px;
   	margin-right: 20px;
+  	border: 1px solid grey;
    	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
 }
 
@@ -243,6 +246,11 @@ ul {
 	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
 }
 
+.services-slider-guarantee,
+.services-slider-credit {
+	display: none;
+}
+
 .content-left {
 	float: left;
 	width: 620px;
@@ -263,6 +271,10 @@ ul {
 	display: none;
 }
 
+footer {
+	background-color: #3d546e;
+}
+
 .footer-contacts {
 	float: left;
 	width: 380px;
@@ -280,6 +292,7 @@ ul {
 	margin-top: 55px;
 	padding-top: 40px;
   	padding-bottom: 40px;
+  	background-color: #33435a;
 }
 
 .footer-copyright-technomart {
@@ -355,6 +368,7 @@ ul {
   	font-size: 14px;
   	margin-right: 20px;
   	margin-bottom: 20px;
+  	border: 1px solid grey;
    	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
 }
 
