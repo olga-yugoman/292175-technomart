@@ -498,7 +498,7 @@ a.btn {
 	width: 195px;
 }
 
-.promo-slider > input[type="radio"] {
+.promo > input[type="radio"] {
   display: none;
 }
 
@@ -526,23 +526,23 @@ a.btn {
   	display: none;
 }
 
-#btn-1:checked ~ .promo-slider #slide1,
-#btn-2:checked ~ .promo-slider #slide2 {
+#btn-1:checked ~ .promo-slide #slide1,
+#btn-2:checked ~ .promo-slide #slide2 {
   	display: block;
 }
 
-#btn-1:checked ~ .promo-slider {
+#btn-1:checked ~ .promo-slide {
   	background-image: url("../img/slider-1.jpg");
   	background-repeat: no-repeat;
 }
 
-#btn-2:checked ~ .promo-slider {
+#btn-2:checked ~ .promo-slide {
   	background-image: url("../img/slider-2.jpg");
     background-repeat: no-repeat;
 }
 
-#btn-1:checked ~ .promo-slider label[for="btn-1"],
-#btn-2:checked ~ .promo-slider label[for="btn-2"] {
+#btn-1:checked ~ .promo-slide label[for="btn-1"],
+#btn-2:checked ~ .promo-slide label[for="btn-2"] {
   	background-color: #ff5357;
 }
 
@@ -819,20 +819,59 @@ ul.services-menu {
 	display: none;
 }
 
+.about {
+	margin-bottom: 48px;
+}
+
+.about p {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
 .content-left {
 	float: left;
 	width: 620px;
-	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
 }
 
-.about {
-	margin-bottom: 80px;
+ul.about-list {
+	margin: 0;
+	margin-bottom: 35px;
+	padding-left: 30px;
+  	list-style-image: url("../img/list-dash.png");
+}
+
+.about-list li {
+	margin-bottom: 23px;
+	font-size: 18px;
+	line-height: 20px;
+	font-family: "Cuprum", "Arial", sans-serif;
+}
+
+.content-left .btn {
+	width: 220px;
+}
+
+.content-left p {
+	width: 520px;
 }
 
 .content-right {
 	float: right;
 	width: 300px;
-	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.content-right .btn {
+	width: 300px;
+}
+
+.content-right p {
+	width: 180px;
+}
+
+.content-right a {
+	display: block;
+	margin-top: 25px;
+	margin-bottom: 35px;
 }
 
 .popup {
@@ -841,24 +880,80 @@ ul.services-menu {
 
 footer {
 	background-color: #3d546e;
+	font-size: 18px;
+  	line-height: 24px;
+  	font-family: "Cuprum", "Arial", sans-serif;
+  	color: #ffffff;
 }
 
 .footer-contacts {
 	float: left;
-	width: 380px;
+	width: 375px;
 	margin-right: 10px;
-	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.footer-contacts .footer-logo {
+	margin: 0;
+	margin-bottom: 25px;
+	margin-right: 160px;
 }
 
 .footer-menu {
 	float: right;
-	width: 550px;
-	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+	width: 555px;
 }
 
+.footer-menu ul {
+	list-style: none;
+	font-size: 0;
+}
+
+.footer-menu li {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-menu a {
+	display: block;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+ul.footer-menu-nav {
+	margin: 0;
+	padding: 0;
+}
+
+.footer-menu-nav a {
+	color: #ffffff;
+	padding-top: 40px; 
+	padding-right: 60px; 
+}
+
+.footer-menu-nav li:last-child a {
+	padding-right: 0; 
+}
+
+ul.footer-menu-promo {
+	margin-left: 25px;
+	padding: 0;
+}
+
+.footer-menu-promo a {
+	color: #ffd180;
+	padding-top: 40px; 
+	padding-right: 60px; 
+}
+
+.footer-menu-promo li:last-child a {
+	padding-right: 0; 
+}
+
+
 .bottom-footer {
-	margin-top: 55px;
-	padding-top: 40px;
+	margin-top: 45px;
+	padding-top: 35px;
   	padding-bottom: 40px;
   	background-color: #33435a;
 }
@@ -866,27 +961,58 @@ footer {
 .footer-copyright-technomart {
   	float: left;
   	width: 320px;
-  	margin-right: 60px;
-  	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+  	margin-right: 65px;
 }
 
  .footer-social {
  	float: left;
  	width: 180px;
- 	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.social-btn {
+  	display: inline-block;
+  	width: 40px;
+  	height: 40px;
+  	margin: 0 1px;
+  	font-size: 0;
+  	vertical-align: top;
+  	text-decoration: none;
+  	background: #29384a  url("../img/sprite.png") no-repeat center;
+  	border: 1px solid #29384a;
+  	border-radius: 50%;
+}
+
+.social-btn-vk {
+    background-position: 0 -438px;
+}
+
+.social-btn-fb {
+    background-position: 5px -74px;
+}
+
+.social-btn-inst {
+    background-position: 3px -140px;
 }
 
  .footer-connect {
  	float: right;
  	width: 140px;
  	margin-right: 20px;
- 	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+}
+
+.footer-connect a{
+	text-decoration: none;
+	color: #ffd180;
 }
 
 .footer-copyright {
  	float: right;
  	width: 140px;
- 	background: rgba(234, 255, 45, 0.2); /*для подсветки сетки*/
+} 
+
+.footer-copyright a{
+	text-decoration: none;
+	color: #ffd180;
 }
 
 .breadcrumbs {
